@@ -180,7 +180,15 @@ header .logo {
     width: 100%;
     margin-top: 40px;
 }
+.rodape{
+    border-top: 1px solid black;
+    text-align: center;
 
+}
+.rodape p{
+    margin-top: 20px;
+
+}
 .btn1 {
     display: inline-block;
     color: white;
