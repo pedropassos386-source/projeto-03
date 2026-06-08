@@ -14,10 +14,10 @@ body {
     clear: both;
 }
 
-/* .container {
+.container {
     max-width: 1280px;
     margin: 0 auto;
-} */
+}
 
 header {
     width: 100%;
@@ -33,10 +33,12 @@ header {
 header nav {
     float: right;
 }
-nav.mobile-menu ul{
+
+nav.mobile-menu ul {
     display: none;
 }
-nav.mobile-menu ul.ativo{
+
+nav.mobile-menu ul.ativo {
     display: block;
 }
 
@@ -68,7 +70,7 @@ nav.mobile-menu ul li {
 
 nav.mobile-menu ul li a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 header nav.desktop-menu ul {
@@ -151,6 +153,33 @@ header .logo {
     background-repeat: no-repeat;
     background-size: contain;
 }
+.sessao1 .container{
+    max-width: 1000px;
+}
+
+.sessao1 {
+    margin-top: 30px;
+    padding-left: 2%;
+    padding-right: 2%;
+    background-color: white;
+    text-align: center;
+}
+
+.sessao1 h2 {
+    font-weight: 300;
+    color: #472663;
+}
+
+.sessao1 p {
+    margin-top: 30px;
+    max-width: 900px;
+    display: inline-block;
+}
+
+.sessao1 img {
+    width: 100%;
+    margin-top: 40px;
+}
 
 .btn1 {
     display: inline-block;
@@ -223,12 +252,12 @@ header .logo {
     }
 
 
-    .logo{
+    .logo {
         position: relative;
         left: 140px;
     }
-    
 
-    
+
+
 
 }
