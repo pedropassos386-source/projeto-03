@@ -14,10 +14,10 @@ body {
     clear: both;
 }
 
-.container {
+/* .container {
     max-width: 1280px;
     margin: 0 auto;
-}
+} */
 
 header {
     width: 100%;
@@ -33,18 +33,56 @@ header {
 header nav {
     float: right;
 }
+nav.mobile-menu ul{
+    display: none;
+}
+nav.mobile-menu ul.ativo{
+    display: block;
+}
 
-header nav ul {
+nav.mobile-menu {
+    cursor: pointer;
+    display: none;
+    width: 32px;
+    height: 32px;
+    background-image: url('../imagens/burger-bar.png');
+    background-size: 100% 100%;
+    margin-top: 80px;
+}
+
+nav.mobile-menu ul {
+    display: none;
+    background-color: rgb(6, 3, 49);
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 140px;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav.mobile-menu ul li {
+    padding: 8px 0;
+    border-bottom: 1px solid black;
+}
+
+nav.mobile-menu ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+header nav.desktop-menu ul {
     list-style-type: none;
 
 }
 
-header nav li {
+
+header nav.desktop-menu li {
     float: left;
     margin: 0 10px;
 }
 
-header nav ul a {
+header nav.desktop-menu li a {
     color: white;
     text-decoration: none;
 }
@@ -79,15 +117,15 @@ header .logo {
     margin-top: 10px;
 }
 
-.foundryvtt{
+.foundryvtt {
     width: 100%;
     background-color: rgb(6, 3, 49);
-    padding:40px 0;
+    padding: 40px 0;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .foundryvtt-texto {
@@ -114,7 +152,7 @@ header .logo {
     background-size: contain;
 }
 
-.btn1{  
+.btn1 {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -122,19 +160,20 @@ header .logo {
     background-color: #FF703D;
     margin-top: 10px;
     font-size: 20px;
-    padding:10px 20px ;
+    padding: 10px 20px;
     transition: 0.5s;
 }
 
-.btn1:hover{
+.btn1:hover {
     background-color: #9c3713;
 }
 
 
-.botao{
+.botao {
     position: relative;
 }
-.btnTopo{
+
+.btnTopo {
     position: absolute;
     bottom: 0px;
     right: 20px;
@@ -146,31 +185,50 @@ header .logo {
     font-size: 24px;
     transition: 0.5s;
 }
-.btnTopo:hover{
+
+.btnTopo:hover {
     background-color: red;
 }
 
-@media screen and (max-width:768px){
-    section.foundryvtt{
+@media screen and (max-width:768px) {
+
+    nav.desktop-menu {
+        display: none;
+    }
+
+    nav.mobile-menu {
+        display: block;
+    }
+
+    section.foundryvtt {
         padding: 40px 2%;
         height: auto;
     }
-    .foundryvtt-img{
+
+    .foundryvtt-img {
         display: none;
     }
-    .foundryvtt-texto{
+
+    .foundryvtt-texto {
         text-align: center;
     }
-    .chamada1{
+
+    .chamada1 {
         text-align: left;
         justify-content: center;
         margin: 0;
         margin-left: 10px;
-        margin-top: 40px;
+        margin-top: 140px;
+
     }
 
+
     .logo{
-        display: flex;
-        justify-content: center;
+        position: relative;
+        left: 140px;
     }
+    
+
+    
+
 }

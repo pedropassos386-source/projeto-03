@@ -6,3 +6,10 @@ btnTopo.addEventListener("click", () => {
         behavior: "smooth"
     });
 });
+
+const mobileMenu = document.querySelector(".mobile-menu");
+const menuLista = document.querySelector(".mobile-menu ul");
+
+mobileMenu.addEventListener("click", () => {
+    menuLista.classList.toggle("ativo");
+});
