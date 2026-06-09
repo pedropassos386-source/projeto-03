@@ -202,7 +202,7 @@ header .logo {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 
@@ -223,7 +223,7 @@ header .logo {
 
 .discord-img {
     width: 30%;
-    height: 30vh;   
+    height: 30vh;
     margin-left: 200px;
     background-repeat: no-repeat;
     background-size: contain;
@@ -398,17 +398,20 @@ header .logo {
         display: block;
     }
 
-    section.foundryvtt {
+    section.foundryvtt,.sessao,.sistema,.discord.requisitos {
         padding: 40px 2%;
         height: auto;
+
     }
 
-    .foundryvtt-img {
-        display: none;
-    }
-
-    .foundryvtt-texto {
+      
+    .foundryvtt-texto,
+    .sessao-texto,
+    .sistema-texto,
+    .discord-texto,.requisitos-texto {
         text-align: center;
+        justify-content: center;
+        margin: 0 auto;
     }
 
     .chamada1 {
@@ -419,14 +422,18 @@ header .logo {
         margin-top: 140px;
 
     }
-
+    
 
     .logo {
         position: relative;
         left: 140px;
     }
 
-    .sessao-img {
+    .foundryvtt-img,
+    .sessao-img,
+    .sistema-img,
+    .discord-img,
+    .requisitos-img {
         display: none;
     }
 
