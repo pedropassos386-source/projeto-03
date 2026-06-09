@@ -153,7 +153,165 @@ header .logo {
     background-repeat: no-repeat;
     background-size: contain;
 }
-.sessao1 .container{
+
+.sessao {
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: rgb(6, 3, 49);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.sessao-texto {
+    color: white;
+    font-size: 22px;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+
+.sessao-texto p {
+    margin: 10px 10px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.sessao-img {
+    width: 30%;
+    height: 30vh;
+    margin-right: 80px;
+    margin-left: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../imagens/void.png');
+}
+
+
+.discord {
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: rgb(6, 3, 49);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.discord-texto {
+    color: white;
+    font-size: 22px;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+
+.discord-texto p {
+    margin: 10px 10px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.discord-img {
+    width: 30%;
+    height: 30vh;   
+    margin-left: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../imagens/png-clipart-discord-computer-icons-logo-computer-software-others-miscellaneous-blue-thumbnail.png');
+}
+
+.sistema {
+    border-top: 1px solid black;
+    width: 100%;
+    background-color: rgb(6, 3, 49);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.sistema-texto {
+    color: white;
+    font-size: 22px;
+    width: 50%;
+    float: right;
+    text-align: center;
+}
+
+
+.sistema-texto p {
+    margin: 10px 10px;
+    font-size: 15px;
+    justify-content: center;
+}
+
+.sistema-img {
+    width: 30%;
+    height: 30vh;
+    margin-right: 80px;
+    margin-left: 80px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('../imagens/unnamed.png');
+}
+
+.requisitos {
+    width: 100%;
+    background-color: rgb(6, 3, 49);
+    padding: 40px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid black;
+}
+
+.requisitos-texto {
+    color: white;
+    font-size: 22px;
+    width: 50%;
+    margin-left: 100px;
+}
+
+.requisitos-texto p {
+    margin: 10px 10px;
+    font-size: 18px;
+}
+
+.requisitos-texto ul {
+    list-style-position: inside;
+    font-size: 15px;
+}
+
+.requisitos-img {
+    width: 30%;
+    height: 30vh;
+    margin-left: 100px;
+    background-image: url('../imagens/lucca2.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+
+
+
+
+
+
+.sessao1 .container {
     max-width: 1000px;
 }
 
@@ -180,15 +338,18 @@ header .logo {
     width: 100%;
     margin-top: 40px;
 }
-.rodape{
+
+.rodape {
     border-top: 1px solid black;
     text-align: center;
 
 }
-.rodape p{
+
+.rodape p {
     margin-top: 20px;
 
 }
+
 .btn1 {
     display: inline-block;
     color: white;
@@ -265,7 +426,9 @@ header .logo {
         left: 140px;
     }
 
-
+    .sessao-img {
+        display: none;
+    }
 
 
 }
