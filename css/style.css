@@ -317,7 +317,7 @@ header .logo {
 }
 
 .sessao1 {
-    margin-top: 30px;
+    margin-top: 50px;
     padding-left: 2%;
     padding-right: 2%;
     background-color: white;
@@ -337,13 +337,128 @@ header .logo {
 
 .sessao1 img {
     width: 100%;
-    margin-top: 40px;
+    /* margin-top: 10px; */
+    position: relative;
+    top: 80px;
+}
+
+.parte1{
+    color: white;
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+    background: #331a6e;
+}
+.wraper-parte1{
+    max-width: 500px;
+    float: right;
+}
+.parte1 h2{
+    font-weight: 300;
+    font-style: italic;
+    font-size: 25px;
+}
+.parte1 p{
+    font-size: 15px;
+    margin-top: 10px;
+    line-height: 26px;
+}
+
+.parte2{
+    float: left;
+    width: 50%;
+    padding: 140px 0 90px 0;
+}
+
+.sobre-autor{
+    float: left;
+    max-width: 600px;
+    padding-left: 30px;
+}
+
+.titulo-autor{
+    float: left;
+    width: 100%;
+}
+
+.wraper-titulo-autor{
+    /* width: calc(100% - 40px); */
+    float: left;
+}
+
+.titulo-autor h2{
+    color: #232323;
+    font-weight: 400;
+    font-size: 25px;
+    padding-right: 20px;
+}
+.titulo-autor p{
+    font-size: 15px;
+    color: #232323;
+    font-style: italic;
+    font-weight: 300;
+}
+
+.titulo-autor .img-autor{
+    position: relative;
+    top: -5px;
+    left: 10px;
+    float: left;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.texto-autor{
+    float: right;
+    width: 100%;
+    margin-top: 10px;
+}
+.texto-autor p{
+    color: #232323;
+    font-size: 15px;
+}
+
+.slider-bullets{
+    width: 100%;
+    float: left;
+    padding-left: 30px;
+    margin-top: 8px;
+}
+.slider-bullets span{
+    width: 16px;
+    height: 16px;
+    float: left;
+    cursor: pointer;
+    border-radius: 8px;
+    margin-right: 8px;
+    background-color: #472663;
+}
+
+.slider-bullets span {
+    width: 16px;
+    height: 16px;
+    float: left;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-right: 8px;
+    background-color: #999;
+    transition: 0.3s;
+}
+
+.slider-bullets span.ativo {
+    background-color: #472663;
+    transform: scale(1.2);
 }
 
 .rodape {
     border-top: 1px solid black;
     text-align: center;
-
+    padding: 50px;
 }
 
 .rodape p {
@@ -456,6 +571,58 @@ header .logo {
         display: none;
     }
 
+    .sessao2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.parte1,
+.parte2 {
+    width: 100%;
+    float: none;
+    padding: 50px 20px;
+}
+
+.wraper-parte1 {
+    float: none;
+    max-width: 100%;
+    text-align: center;
+}
+
+.sobre-autor {
+    float: none;
+    max-width: 100%;
+    padding-left: 0;
+}
+
+.titulo-autor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.wraper-titulo-autor {
+    float: none;
+}
+
+.img-autor {
+    margin-top: 15px;
+}
+
+.texto-autor {
+    float: none;
+    text-align: center;
+}
+
+.slider-bullets {
+    float: none;
+    padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 
 }
 
@@ -512,5 +679,25 @@ header .logo {
         display: none;
     }
 
+    .parte1 h2,
+.titulo-autor h2 {
+    font-size: 22px;
+}
+
+.parte1 p,
+.texto-autor p {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.img-autor {
+    width: 80px;
+    height: 80px;
+}
+
+.slider-bullets span {
+    width: 14px;
+    height: 14px;
+}
 
 }
