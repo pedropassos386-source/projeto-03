@@ -47,7 +47,7 @@ nav.mobile-menu {
     display: none;
     width: 32px;
     height: 32px;
-    background-image: url('../imagens/burger-bar.png');
+    background-image: url('../imagens/burger.svg');
     background-size: 100% 100%;
     margin-top: 80px;
 }
@@ -474,6 +474,10 @@ header .logo {
     background-color: #FF703D;
     margin-top: 10px;
     font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+    text-shadow:2px 2px #790404;
     padding: 10px 20px;
     transition: 0.5s;
 }
